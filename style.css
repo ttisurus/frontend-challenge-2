@@ -1,19 +1,83 @@
-.body {
-    max-width: 1440px;
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    background-color: azure;
+}
+
+.container {
+    display: inline-block;
+    position: absolute;
+    max-width: 1110px;
     width: auto;
-    height: auto;
+    margin-top: 10%;
+    margin-left: 25%;
+    height: 500px;
+    
 }
 
-.container{
-    display: inline-flex;
+.img-first {
+    position: relative;
+    float: right;
+    width: 400px;  
+    height: 400px; 
+    top: 50px;
+    margin-right: 5%; 
+    border-radius: 5px;
+
 }
 
-/*Color del texto*/
+#quotes {
+    position: absolute;
+    margin-top: 115px;
+    margin-left: 15%;
+    width: 100px;
+    top: 0;
+}
 
-.cont-text {
+#bg {
+    width: 500px;
+    float: right;
+    position: relative;
+    margin: 0 auto;
+    top: -500px;
+    z-index: -1;
+}
+
+#curve {
+    position: relative;
+    left: 0px;
+    bottom: -150px;
+}
+
+.text-left {
+    position: relative;
+    top: 130px;
+    left: 90px;
     color: hsl(240, 38%, 20%);
+    font-weight: 300;
+}
+
+.name {
+    font-size: 16px;
+    font-weight: 700;
+    display: flex;
 }
 
 .subtext {
     color: hsl(240, 18%, 77%);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.pagination {
+    display: inline-flex;
+    justify-content: space-between;
+    background-color: black;
+    width: 60px;
+    height: 25px;
+    padding: 8px;
+    position: relative;
+    float: right;
+    left: 120px;
+    bottom: -130px;
 }

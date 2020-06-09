@@ -4,71 +4,38 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+  <title>Document</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-
-  <title>Frontend Mentor | Coding Bootcamp Testimonials Slider</title>
-
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="/style.css">
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
 </head>
 
 <body>
-
-  <!-- Contenedor de texto y slider -->
-
   <div class="container">
+    <img class="img-first" src="/images/image-tanya.jpg" alt="">
     <div class="cont-text">
-      <p>“ I’ve been interested in coding for a while but never taken the jump, until now.
-        I couldn’t recommend this course enough. I’m now in the job of my dreams and so
-        excited about the future. ”</p>
-
-      <p><b>Tanya Sinclair</b></p>
-      <p class="subtext"> UX Engineer</p>
-      <img class="mySlides" src="/images/image-tanya.jpg" alt="Tanya">
-    </div>
-    <div class="cont-text">
-      <p>“ If you want to lay the best foundation possible I’d recommend taking this course.
-        The depth the instructors go into is incredible. I now feel so confident about
-        starting up as a professional developer. ”</p>
-
-      <p><b>John Tarkpor</b></p>
-      <p class="subtext">Junior Front-end Developer</p>
-      <img class="mySlides" src="/images/image-john.jpg" alt="Jhon">
-    </div>
-
-    <!-- Slider con indicadores -->
-
-    <div class="w3-center">
-      <div class="w3-section">
-        <button class="w3-button w3-light-grey" onclick="plusDivs(-1)">❮ Prev</button>
-        <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+      <div class="text-left">
+        <p>“ I’ve been interested in coding for a while but never taken the jump, until now.
+          I couldn’t recommend this course enough. I’m now in the job of my dreams and so
+          excited about the future. ”</p>
+        <p class="name">Tanya Sinclair<span class="subtext">UX Engineer</span></p>
       </div>
     </div>
 
+    <div class="pagination">
+      <img class="arrow-right" src="/images/icon-prev.svg" alt="preview">
+      <img class="arrow-left" src="/images/icon-next.svg" alt="next">
+    </div>
+    <div>
+      <img id="quotes" src="/images/pattern-quotes.svg" alt="">
+    </div>
+    <div>
+      <img id="curve" src="/images/pattern-curve.svg" alt="">
+    </div>
+    <div>
+      <img id="bg" src="/images/pattern-bg.svg" alt="">
+    </div>
   </div>
-
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
-
-  <!-- Script del slider y asignacion de botones -->
-
-  <script src="/script.js"></script>
-
 </body>
 
 </html>
