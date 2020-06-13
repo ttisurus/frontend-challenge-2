@@ -7,12 +7,20 @@ body {
 .container {
     display: inline-block;
     position: absolute;
+    justify-content: center;
+    align-items: center;
     max-width: 1110px;
     width: auto;
-    margin-top: 10%;
-    margin-left: 25%;
-    height: 500px;
-    
+    padding: 10%;
+    height: 500px;    
+}
+
+.slider-1 {
+    display: block;
+}
+
+.slider-2 {
+    display: none;
 }
 
 .img-first {
@@ -23,9 +31,7 @@ body {
     top: 50px;
     margin-right: 5%; 
     border-radius: 5px;
-
 }
-
 
 .text-left {
     position: relative;
@@ -47,11 +53,11 @@ body {
     font-weight: 500;
 }
 
-.slide {
+.button {
     display: inline-flex;    
     float: right;
-    left: 120px;
-    bottom: -130px;
+    left: 130px;
+    bottom: -300px;
     position: relative;   
     width: fit-content;
     height: fit-content;
@@ -65,34 +71,36 @@ button{
     height: 3.2rem;
 }
 
-#izquierda{
+.prev {
+    cursor: pointer;
     background-color: white;
     border:none;
     border-top-left-radius: 50%;
     border-bottom-left-radius: 50%;
 }
 
-#derecha{
+.next {
+    cursor: pointer;
     background-color: white;
     border: none;
     border-top-right-radius: 50%;
     border-bottom-right-radius: 50%;
 }
-
+/*
 #quotes {
     position: absolute;
-    margin-top: 115px;
+    margin-top: 290px;
     margin-left: 15%;
     width: 100px;
     top: 0;
 }
 
 #bg {
-    width: 500px;
+    width: 60%;
     float: right;
     position: relative;
-    margin: 0 auto;
-    top: -500px;
+    top: -490px;
+    right: -180px;
     z-index: -1;
 }
 
@@ -100,4 +108,4 @@ button{
     position: relative;
     left: 0px;
     bottom: -150px;
-}
+}*/

@@ -1,26 +1,24 @@
-var slideIndex = 1;
-showDivs(slideIndex);
+const slider_1 = document.getElementById('first_slider')
+const slider_2 = document.getElementById('second_slider')
+var i = 0;
+var sliders = [];
 
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
+sliders[0] = slider_1.style.display = 'block';
+sliders[1] = slider_2.style.display = 'none';
 
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
+function initSlider() {
+  if (i < sliders.length - 1) {
+    sliders[0] = slider_1.style.display = 'none';
+    sliders[1] = slider_2.style.display = 'block';
 
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length}
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";  
+    i++;
+  }else {
+    sliders[0] = slider_1.style.display = 'block';
+    sliders[1] = slider_2.style.display = 'none';
+
+    i = 0;
+
   }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" w3-red", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-red";
-}
+};
+
+initSlider();
