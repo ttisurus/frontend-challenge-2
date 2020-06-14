@@ -8,13 +8,13 @@ sliders[1] = slider_2.style.display = 'none';
 
 function initSlider() {
   if (i < sliders.length - 1) {
-    sliders[0] = slider_1.style.display = 'none';
-    sliders[1] = slider_2.style.display = 'block';
+    sliders[0] = slider_1.style.display = 'block';
+    sliders[1] = slider_2.style.display = 'none';
 
     i++;
   }else {
-    sliders[0] = slider_1.style.display = 'block';
-    sliders[1] = slider_2.style.display = 'none';
+    sliders[0] = slider_1.style.display = 'none';
+    sliders[1] = slider_2.style.display = 'block';
 
     i = 0;
 
