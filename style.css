@@ -69,6 +69,7 @@ body {
 button{
     width: 3rem;
     height: 3.2rem;
+    outline: none;
 }
 
 .prev {
